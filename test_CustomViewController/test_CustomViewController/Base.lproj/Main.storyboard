@@ -25,31 +25,33 @@
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="ZKs-gX-i2r">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="gmt-aa-lRq"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="APj-tg-BEx"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="yEQ-e7-att"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="gen-Og-1dy"/>
-                    </connections>
-                </searchDisplayController>
                 <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="test_CustomViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1BM-2d-DWy">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Th2-9f-ev0" customClass="myCustomView_input" customModule="test_CustomViewController" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </view>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="115" width="414" height="621"/>
+                                    <rect key="frame" x="0.0" y="570" width="414" height="166"/>
                                 </variation>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rj4-do-5aR" customClass="myCustomView_input" customModule="test_CustomViewController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="271" width="414" height="119"/>
+                                </variation>
+                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7Q-Wt-tLE">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -58,28 +60,20 @@
                                     <rect key="frame" x="0.0" y="28" width="400" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Kt-tX-g7B">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="72" width="365" height="30"/>
-                                </variation>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1BM-2d-DWy"/>
+                                <exclude reference="rj4-do-5aR"/>
                                 <exclude reference="c7Q-Wt-tLE"/>
-                                <exclude reference="3Kt-tX-g7B"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1BM-2d-DWy"/>
+                                <include reference="rj4-do-5aR"/>
                                 <include reference="c7Q-Wt-tLE"/>
-                                <include reference="3Kt-tX-g7B"/>
                             </mask>
                         </variation>
                     </view>
@@ -89,6 +83,15 @@
                         <outlet property="searchDisplayController" destination="ZKs-gX-i2r" id="and-vE-OU3"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ZKs-gX-i2r">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="gmt-aa-lRq"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="APj-tg-BEx"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="yEQ-e7-att"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="gen-Og-1dy"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="129" y="316"/>
         </scene>
