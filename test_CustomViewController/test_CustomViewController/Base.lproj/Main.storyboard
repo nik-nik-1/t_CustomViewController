@@ -25,13 +25,22 @@
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="ZKs-gX-i2r">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="gmt-aa-lRq"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="APj-tg-BEx"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="yEQ-e7-att"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="gen-Og-1dy"/>
+                    </connections>
+                </searchDisplayController>
                 <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="test_CustomViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1BM-2d-DWy">
@@ -80,15 +89,6 @@
                         <outlet property="searchDisplayController" destination="ZKs-gX-i2r" id="and-vE-OU3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="ZKs-gX-i2r">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="gmt-aa-lRq"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="APj-tg-BEx"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="yEQ-e7-att"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="gen-Og-1dy"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="129" y="316"/>
         </scene>
