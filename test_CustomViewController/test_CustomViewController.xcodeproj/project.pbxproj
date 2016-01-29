@@ -12,8 +12,8 @@
 		840B0BB91C5A210000E5C807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BB71C5A210000E5C807 /* Main.storyboard */; };
 		840B0BBB1C5A210000E5C807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BBA1C5A210000E5C807 /* Assets.xcassets */; };
 		840B0BC91C5A3ACD00E5C807 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */; };
-		840B0BCB1C5A7BAD00E5C807 /* myCustomView_input.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BCA1C5A7BAD00E5C807 /* myCustomView_input.xib */; };
-		840B0BCD1C5A7C2200E5C807 /* myCustomView_input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BCC1C5A7C2200E5C807 /* myCustomView_input.swift */; };
+		840B0BCB1C5A7BAD00E5C807 /* MyCustomViewInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BCA1C5A7BAD00E5C807 /* MyCustomViewInput.xib */; };
+		840B0BCD1C5A7C2200E5C807 /* MyCustomViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BCC1C5A7C2200E5C807 /* MyCustomViewInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		840B0BBA1C5A210000E5C807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840B0BBF1C5A210000E5C807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		840B0BCA1C5A7BAD00E5C807 /* myCustomView_input.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myCustomView_input.xib; sourceTree = "<group>"; };
-		840B0BCC1C5A7C2200E5C807 /* myCustomView_input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCustomView_input.swift; sourceTree = "<group>"; };
+		840B0BCA1C5A7BAD00E5C807 /* MyCustomViewInput.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomViewInput.xib; sourceTree = "<group>"; };
+		840B0BCC1C5A7C2200E5C807 /* MyCustomViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomViewInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 		840B0BC51C5A349900E5C807 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				840B0BCC1C5A7C2200E5C807 /* myCustomView_input.swift */,
+				840B0BCC1C5A7C2200E5C807 /* MyCustomViewInput.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 		840B0BC61C5A34A200E5C807 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				840B0BCA1C5A7BAD00E5C807 /* myCustomView_input.xib */,
+				840B0BCA1C5A7BAD00E5C807 /* MyCustomViewInput.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840B0BC91C5A3ACD00E5C807 /* LaunchScreen.xib in Resources */,
-				840B0BCB1C5A7BAD00E5C807 /* myCustomView_input.xib in Resources */,
+				840B0BCB1C5A7BAD00E5C807 /* MyCustomViewInput.xib in Resources */,
 				840B0BBB1C5A210000E5C807 /* Assets.xcassets in Resources */,
 				840B0BB91C5A210000E5C807 /* Main.storyboard in Resources */,
 			);
@@ -169,7 +169,7 @@
 			files = (
 				840B0BB61C5A210000E5C807 /* ViewController.swift in Sources */,
 				840B0BB41C5A210000E5C807 /* AppDelegate.swift in Sources */,
-				840B0BCD1C5A7C2200E5C807 /* myCustomView_input.swift in Sources */,
+				840B0BCD1C5A7C2200E5C807 /* MyCustomViewInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
