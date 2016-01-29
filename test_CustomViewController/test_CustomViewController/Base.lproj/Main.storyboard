@@ -46,14 +46,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="204" width="414" height="532"/>
+                                    <rect key="frame" x="0.0" y="344" width="414" height="392"/>
                                 </variation>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-zm-Dnt" customClass="MyCustomViewInput" customModule="test_CustomViewController" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.93339771032333374" green="0.91146785020828247" blue="0.67735236883163452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="66" width="414" height="128"/>
+                                    <rect key="frame" x="0.0" y="66" width="414" height="229"/>
                                 </variation>
                             </view>
                         </subviews>
