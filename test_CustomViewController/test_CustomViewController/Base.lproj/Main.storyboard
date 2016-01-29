@@ -42,34 +42,34 @@
                                     <rect key="frame" x="0.0" y="28" width="400" height="30"/>
                                 </variation>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-oI-ZBU" customClass="MyCustomViewIn" customModule="test_CustomViewController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="5" y="64" width="409" height="39"/>
+                                </variation>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1BM-2d-DWy">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="344" width="414" height="392"/>
+                                    <rect key="frame" x="0.0" y="103" width="414" height="633"/>
                                 </variation>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-zm-Dnt" customClass="MyCustomViewInput" customModule="test_CustomViewController" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.93339771032333374" green="0.91146785020828247" blue="0.67735236883163452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="66" width="414" height="229"/>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="c7Q-Wt-tLE"/>
+                                <exclude reference="cEh-oI-ZBU"/>
                                 <exclude reference="1BM-2d-DWy"/>
-                                <exclude reference="xNt-zm-Dnt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="c7Q-Wt-tLE"/>
+                                <include reference="cEh-oI-ZBU"/>
                                 <include reference="1BM-2d-DWy"/>
-                                <include reference="xNt-zm-Dnt"/>
                             </mask>
                         </variation>
                     </view>
