@@ -14,6 +14,9 @@
 		840B0BC91C5A3ACD00E5C807 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */; };
 		840B0BD21C5B9E7D00E5C807 /* MyCustomViewIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BD11C5B9E7D00E5C807 /* MyCustomViewIn.xib */; };
 		840B0BD41C5B9F1200E5C807 /* MyCustomViewIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD31C5B9F1200E5C807 /* MyCustomViewIn.swift */; };
+		840B0BD71C5D0FDE00E5C807 /* TableViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */; };
+		840B0BD91C5D100C00E5C807 /* TableViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD81C5D100C00E5C807 /* TableViewView.swift */; };
+		840B0BDB1C5D12C800E5C807 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		840B0BD11C5B9E7D00E5C807 /* MyCustomViewIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomViewIn.xib; sourceTree = "<group>"; };
 		840B0BD31C5B9F1200E5C807 /* MyCustomViewIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomViewIn.swift; sourceTree = "<group>"; };
+		840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewObject.swift; path = ../TableViewObject.swift; sourceTree = "<group>"; };
+		840B0BD81C5D100C00E5C807 /* TableViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewView.swift; sourceTree = "<group>"; };
+		840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,9 @@
 		840B0BB21C5A210000E5C807 /* test_CustomViewController */ = {
 			isa = PBXGroup;
 			children = (
-				840B0BC71C5A34A900E5C807 /* Controller */,
-				840B0BC61C5A34A200E5C807 /* View */,
 				840B0BC51C5A349900E5C807 /* Model */,
+				840B0BC61C5A34A200E5C807 /* View */,
+				840B0BC71C5A34A900E5C807 /* Controller */,
 				840B0BB31C5A210000E5C807 /* AppDelegate.swift */,
 				840B0BB71C5A210000E5C807 /* Main.storyboard */,
 				840B0BBA1C5A210000E5C807 /* Assets.xcassets */,
@@ -73,6 +79,7 @@
 		840B0BC51C5A349900E5C807 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */,
 				840B0BD31C5B9F1200E5C807 /* MyCustomViewIn.swift */,
 			);
 			name = Model;
@@ -82,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				840B0BD11C5B9E7D00E5C807 /* MyCustomViewIn.xib */,
+				840B0BD81C5D100C00E5C807 /* TableViewView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				840B0BB51C5A210000E5C807 /* ViewController.swift */,
+				840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -167,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840B0BDB1C5D12C800E5C807 /* TableViewManager.swift in Sources */,
 				840B0BB61C5A210000E5C807 /* ViewController.swift in Sources */,
+				840B0BD91C5D100C00E5C807 /* TableViewView.swift in Sources */,
+				840B0BD71C5D0FDE00E5C807 /* TableViewObject.swift in Sources */,
 				840B0BB41C5A210000E5C807 /* AppDelegate.swift in Sources */,
 				840B0BD41C5B9F1200E5C807 /* MyCustomViewIn.swift in Sources */,
 			);
