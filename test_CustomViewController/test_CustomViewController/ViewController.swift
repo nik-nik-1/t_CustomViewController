@@ -13,6 +13,8 @@ class ViewController: UIViewController {
   @IBOutlet var MyTableView: UITableView!
   let swiftBlogs = TableViewManager().getMassForTableView()
   
+  let searchController = UISearchController(searchResultsController: nil)
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
