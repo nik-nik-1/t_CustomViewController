@@ -16,6 +16,26 @@ class TableViewManager: NSObject {
     return swiftBlogs
   }
   
+  func getStructForTableView() -> [Blog] {
+    
+    let swiftBlogs = [
+      Blog(category:"1", name:"Ray Wenderlich"),
+      Blog(category:"2", name:"NSHipster"),
+      Blog(category:"1", name:"iOS Developer Tips"),
+      Blog(category:"2", name:"Jameson Quave"),
+      Blog(category:"3", name:"Natasha The Robot"),
+      Blog(category:"1", name:"Coding Explorer"),
+      Blog(category:"3", name:"That Thing In Swift"),
+      Blog(category:"1", name:"Andrew Bancroft"),
+      Blog(category:"3", name:"iAchieved.it"),
+      Blog(category:"1", name:"Airspeed Velocity")]
+    
+    return swiftBlogs
+  }
+
+  
+
+  
   /* private var MyTableViewElements = MyTableView()
   
   override init() {

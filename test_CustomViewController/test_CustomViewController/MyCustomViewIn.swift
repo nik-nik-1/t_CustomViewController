@@ -13,6 +13,31 @@ import UIKit
   var view: UIView!
   var nibName: String = "MyCustomViewIn"
   
+  @IBOutlet weak var SearchTextInput: UITextField!
+  @IBOutlet weak var SearchButton: UIButton!
+  
+  //func searchButton(sender: AnyObject) {
+  //
+  //}
+  
+  /*@IBInspectable var title: String? {
+    get {
+      return SearchTextInput.text
+    }
+    set(title) {
+      SearchTextInput.text = title
+    }
+  }
+  
+  @IBInspectable var buttonTitle: String? {
+    get {
+      return SearchButton.titleForState(UIControlState.Normal)
+    }
+    set(title) {
+      SearchButton.setTitle(title, forState: UIControlState.Normal)
+    }
+  }*/
+  
   override init(frame: CGRect) {
     // properties
     super.init(frame: frame)
@@ -46,6 +71,10 @@ import UIKit
     
     return view
   }
+  
+  
+  
+  
   /*
   // Only override drawRect: if you perform custom drawing.
   // An empty implementation adversely affects performance during animation.

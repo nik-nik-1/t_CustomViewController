@@ -17,6 +17,7 @@
 		840B0BD71C5D0FDE00E5C807 /* TableViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */; };
 		840B0BD91C5D100C00E5C807 /* TableViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD81C5D100C00E5C807 /* TableViewView.swift */; };
 		840B0BDB1C5D12C800E5C807 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */; };
+		840B0BDE1C5E286C00E5C807 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BDD1C5E286C00E5C807 /* Blog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewObject.swift; path = ../TableViewObject.swift; sourceTree = "<group>"; };
 		840B0BD81C5D100C00E5C807 /* TableViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewView.swift; sourceTree = "<group>"; };
 		840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
+		840B0BDD1C5E286C00E5C807 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */,
+				840B0BDD1C5E286C00E5C807 /* Blog.swift */,
 				840B0BD31C5B9F1200E5C807 /* MyCustomViewIn.swift */,
 			);
 			name = Model;
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840B0BDB1C5D12C800E5C807 /* TableViewManager.swift in Sources */,
+				840B0BDE1C5E286C00E5C807 /* Blog.swift in Sources */,
 				840B0BB61C5A210000E5C807 /* ViewController.swift in Sources */,
 				840B0BD91C5D100C00E5C807 /* TableViewView.swift in Sources */,
 				840B0BD71C5D0FDE00E5C807 /* TableViewObject.swift in Sources */,
