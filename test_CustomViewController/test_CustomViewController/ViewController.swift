@@ -36,6 +36,11 @@ class ViewController: UIViewController {
     searchController.searchBar.delegate = self
     definesPresentationContext = true
     searchController.dimsBackgroundDuringPresentation = false
+    
+    // Setup the Scope Bar
+    searchController.searchBar.scopeButtonTitles = ["All", "1", "2", "3"]
+    //MyTableView.tableHeaderView = searchController.searchBar
+    //searchController.active == true
 
   }
   
@@ -48,8 +53,21 @@ class ViewController: UIViewController {
   func myButtonTapped2(sender:UIButton!)
   {
     print("Custom subview button 2 tapped")
+    searchController.searchBar.text = InputTextController.SearchTextInput.text
+   //searchController.active == true
+    // searchController.//updateSearchResultsForSearchController(searchController)
+    filterContentForSearchText(searchController.searchBar.text!, scope: "All")
+    
   }
 
+  /*func filterContentForSearchText(searchText: String, scope: String = "All") {
+    filteredBlogs = swiftBlogs.filter({( blog : Blog) -> Bool in
+      let categoryMatch = (scope == "All") || (blog.category == scope)
+      return categoryMatch && blog.name.lowercaseString.containsString(searchText.lowercaseString)
+    })
+    MyTableView.reloadData()
+  }*/
+  
 }
 
 
@@ -64,7 +82,9 @@ extension ViewController: UITableViewDataSource {
     }*/
     //return swiftBlogs.count
     
-    if searchController.active && searchController.searchBar.text != "" {
+    if
+      //searchController.active &&
+      searchController.searchBar.text != "" {
       return filteredBlogs.count
     }
     return swiftBlogs.count
@@ -82,7 +102,9 @@ extension ViewController: UITableViewDataSource {
     return cell*/
     let cell = tableView.dequeueReusableCellWithIdentifier("TextCell", forIndexPath: indexPath)
     let blog: Blog
-    if searchController.active && searchController.searchBar.text != "" {
+    if
+      //searchController.active &&
+      searchController.searchBar.text != "" {
       blog = filteredBlogs[indexPath.row]
     } else {
       blog = swiftBlogs[indexPath.row]
@@ -127,7 +149,7 @@ extension ViewController: UISearchResultsUpdating {
   func updateSearchResultsForSearchController(searchController: UISearchController) {
     let searchBar = searchController.searchBar
     //let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-    filterContentForSearchText(searchController.searchBar.text!)
+    filterContentForSearchText(searchController.searchBar.text!, scope: "All")
   }
 }
 
