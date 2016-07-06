@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchViewController: UIViewController {
   
   @IBOutlet weak var InputTextController: MyCustomViewIn!
   
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
 
 
 // MARK: extentions
-extension ViewController: UITableViewDataSource {
+extension SearchViewController: UITableViewDataSource {
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
     if searchController.searchBar.text != "" {
@@ -99,7 +99,7 @@ extension ViewController: UITableViewDataSource {
   
 }
 
-extension ViewController: UITableViewDelegate {
+extension SearchViewController: UITableViewDelegate {
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
     
@@ -108,14 +108,14 @@ extension ViewController: UITableViewDelegate {
   }
 }
 
-extension ViewController: UISearchBarDelegate {
+extension SearchViewController: UISearchBarDelegate {
   // MARK: - UISearchBar Delegate
   func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
     filterContentForSearchText(searchBar.text!)
   }
 }
 
-extension ViewController: UISearchResultsUpdating {
+extension SearchViewController: UISearchResultsUpdating {
   // MARK: - UISearchResultsUpdating Delegate
   func updateSearchResultsForSearchController(searchController: UISearchController) {
     let searchBar = searchController.searchBar

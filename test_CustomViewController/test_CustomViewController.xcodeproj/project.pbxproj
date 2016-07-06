@@ -15,7 +15,7 @@
 		E798C3CF1D2D55CA004CD5C6 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3CD1D2D55CA004CD5C6 /* TableViewManager.swift */; };
 		E798C3D01D2D55CA004CD5C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3CE1D2D55CA004CD5C6 /* ViewController.swift */; };
 		E798C3D31D2D55D6004CD5C6 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3D11D2D55D6004CD5C6 /* Blog.swift */; };
-		E798C3D41D2D55D6004CD5C6 /* MyCustomViewIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3D21D2D55D6004CD5C6 /* MyCustomViewIn.swift */; };
+		E798C3D61D2D5A51004CD5C6 /* MyCustomViewIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3D51D2D5A51004CD5C6 /* MyCustomViewIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		E798C3CD1D2D55CA004CD5C6 /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
 		E798C3CE1D2D55CA004CD5C6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E798C3D11D2D55D6004CD5C6 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
-		E798C3D21D2D55D6004CD5C6 /* MyCustomViewIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomViewIn.swift; sourceTree = "<group>"; };
+		E798C3D51D2D5A51004CD5C6 /* MyCustomViewIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomViewIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				E798C3D11D2D55D6004CD5C6 /* Blog.swift */,
-				E798C3D21D2D55D6004CD5C6 /* MyCustomViewIn.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +109,7 @@
 		E798C3C81D2D5559004CD5C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E798C3D51D2D5A51004CD5C6 /* MyCustomViewIn.swift */,
 				E798C3C91D2D55C0004CD5C6 /* MyCustomViewIn.xib */,
 				840B0BB71C5A210000E5C807 /* Main.storyboard */,
 			);
@@ -190,9 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E798C3CF1D2D55CA004CD5C6 /* TableViewManager.swift in Sources */,
-				E798C3D41D2D55D6004CD5C6 /* MyCustomViewIn.swift in Sources */,
 				E798C3D31D2D55D6004CD5C6 /* Blog.swift in Sources */,
 				E798C3D01D2D55CA004CD5C6 /* ViewController.swift in Sources */,
+				E798C3D61D2D5A51004CD5C6 /* MyCustomViewIn.swift in Sources */,
 				840B0BB41C5A210000E5C807 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
