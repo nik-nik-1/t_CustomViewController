@@ -15,9 +15,7 @@ class ViewController: UIViewController {
   @IBOutlet var MyTableView: UITableView!
   
   // MARK: - Properties
-  //let swiftBlogs = TableViewManager().getStructForTableView()
-  
-  
+    
   let swiftBlogs = TableViewManager().getStructForTableView()//[Blog]()
   var filteredBlogs = [Blog]()
   let searchController = UISearchController(searchResultsController: nil)
@@ -28,7 +26,7 @@ class ViewController: UIViewController {
     MyTableView.delegate    = self
     MyTableView.dataSource  = self
     
-    //InputTextController.SearchButton.addTarget(self, action: "myButtonTapped2:", forControlEvents: UIControlEvents.TouchUpInside)
+    
     InputTextController.SearchButton.addTarget(self, action: Selector("myButtonTapped2:"), forControlEvents: UIControlEvents.TouchUpInside)
     
     // Setup the Search Controller
@@ -40,7 +38,6 @@ class ViewController: UIViewController {
     // Setup the Scope Bar
     searchController.searchBar.scopeButtonTitles = ["All", "1", "2", "3"]
     //MyTableView.tableHeaderView = searchController.searchBar
-    //searchController.active == true
 
   }
   
@@ -54,20 +51,11 @@ class ViewController: UIViewController {
   {
     print("Custom subview button 2 tapped")
     searchController.searchBar.text = InputTextController.SearchTextInput.text
-   //searchController.active == true
-    // searchController.//updateSearchResultsForSearchController(searchController)
+  
     filterContentForSearchText(searchController.searchBar.text!, scope: "All")
     
   }
 
-  /*func filterContentForSearchText(searchText: String, scope: String = "All") {
-    filteredBlogs = swiftBlogs.filter({( blog : Blog) -> Bool in
-      let categoryMatch = (scope == "All") || (blog.category == scope)
-      return categoryMatch && blog.name.lowercaseString.containsString(searchText.lowercaseString)
-    })
-    MyTableView.reloadData()
-  }*/
-  
 }
 
 
@@ -75,16 +63,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-    /*if let albumData = currentAlbumData {
-    return albumData.titles.count
-    } else {
-    return 0
-    }*/
-    //return swiftBlogs.count
-    
-    if
-      //searchController.active &&
-      searchController.searchBar.text != "" {
+    if searchController.searchBar.text != "" {
       return filteredBlogs.count
     }
     return swiftBlogs.count
@@ -93,22 +72,14 @@ extension ViewController: UITableViewDataSource {
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
   
-    
-    /*let cell = tableView.dequeueReusableCellWithIdentifier("TextCell", forIndexPath: indexPath) as UITableViewCell
-    
-    let row = indexPath.row
-    cell.textLabel?.text = swiftBlogs[row]
-    
-    return cell*/
     let cell = tableView.dequeueReusableCellWithIdentifier("TextCell", forIndexPath: indexPath)
     let blog: Blog
-    if
-      //searchController.active &&
-      searchController.searchBar.text != "" {
+    if searchController.searchBar.text != "" {
       blog = filteredBlogs[indexPath.row]
     } else {
       blog = swiftBlogs[indexPath.row]
     }
+    
     cell.textLabel!.text = blog.name
     //cell.detailTextLabel!.text = blog.category
     return cell
@@ -148,7 +119,7 @@ extension ViewController: UISearchResultsUpdating {
   // MARK: - UISearchResultsUpdating Delegate
   func updateSearchResultsForSearchController(searchController: UISearchController) {
     let searchBar = searchController.searchBar
-    //let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+    
     filterContentForSearchText(searchController.searchBar.text!, scope: "All")
   }
 }

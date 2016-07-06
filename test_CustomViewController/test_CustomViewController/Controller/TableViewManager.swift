@@ -32,35 +32,5 @@ class TableViewManager: NSObject {
     
     return swiftBlogs
   }
-
-  
-
-  
-  /* private var MyTableViewElements = MyTableView()
-  
-  override init() {
-  //Dummy list of elements
-  let swiftBlogs = ["Ray Wenderlich", "NSHipster", "iOS Developer Tips", "Jameson Quave", "Natasha The Robot", "Coding Explorer", "That Thing In Swift", "Andrew Bancroft", "iAchieved.it", "Airspeed Velocity"]
-  
-  MyTableViewElements = swiftBlogs
-  }
-  
-  func getAlbums() -> [MyTableView] {
-  return MyTableViewElements
-  }
-  
-  func addAlbum(element: MyTableView, index: Int) {
-  if (MyTableViewElements.count >= index) {
-  MyTableViewElements.insert(element, atIndex: index)
-  } else {
-  MyTableViewElements.append(element)
-  }
-  }
-  
-  func deleteAlbumAtIndex(index: Int) {
-  MyTableViewElements.removeAtIndex(index)
-  }
-  */
-  
   
 }

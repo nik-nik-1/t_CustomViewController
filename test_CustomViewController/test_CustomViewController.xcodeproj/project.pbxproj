@@ -8,32 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		840B0BB41C5A210000E5C807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BB31C5A210000E5C807 /* AppDelegate.swift */; };
-		840B0BB61C5A210000E5C807 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BB51C5A210000E5C807 /* ViewController.swift */; };
 		840B0BB91C5A210000E5C807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BB71C5A210000E5C807 /* Main.storyboard */; };
 		840B0BBB1C5A210000E5C807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BBA1C5A210000E5C807 /* Assets.xcassets */; };
 		840B0BC91C5A3ACD00E5C807 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */; };
-		840B0BD21C5B9E7D00E5C807 /* MyCustomViewIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B0BD11C5B9E7D00E5C807 /* MyCustomViewIn.xib */; };
-		840B0BD41C5B9F1200E5C807 /* MyCustomViewIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD31C5B9F1200E5C807 /* MyCustomViewIn.swift */; };
-		840B0BD71C5D0FDE00E5C807 /* TableViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */; };
-		840B0BD91C5D100C00E5C807 /* TableViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BD81C5D100C00E5C807 /* TableViewView.swift */; };
-		840B0BDB1C5D12C800E5C807 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */; };
-		840B0BDE1C5E286C00E5C807 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B0BDD1C5E286C00E5C807 /* Blog.swift */; };
+		E798C3CB1D2D55C0004CD5C6 /* MyCustomViewIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = E798C3C91D2D55C0004CD5C6 /* MyCustomViewIn.xib */; };
+		E798C3CF1D2D55CA004CD5C6 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3CD1D2D55CA004CD5C6 /* TableViewManager.swift */; };
+		E798C3D01D2D55CA004CD5C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3CE1D2D55CA004CD5C6 /* ViewController.swift */; };
+		E798C3D31D2D55D6004CD5C6 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3D11D2D55D6004CD5C6 /* Blog.swift */; };
+		E798C3D41D2D55D6004CD5C6 /* MyCustomViewIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3D21D2D55D6004CD5C6 /* MyCustomViewIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		840B0BB01C5A210000E5C807 /* test_CustomViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_CustomViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840B0BB31C5A210000E5C807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840B0BB51C5A210000E5C807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840B0BB81C5A210000E5C807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		840B0BBA1C5A210000E5C807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		840B0BBF1C5A210000E5C807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		840B0BD11C5B9E7D00E5C807 /* MyCustomViewIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomViewIn.xib; sourceTree = "<group>"; };
-		840B0BD31C5B9F1200E5C807 /* MyCustomViewIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomViewIn.swift; sourceTree = "<group>"; };
-		840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewObject.swift; path = ../TableViewObject.swift; sourceTree = "<group>"; };
-		840B0BD81C5D100C00E5C807 /* TableViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewView.swift; sourceTree = "<group>"; };
-		840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
-		840B0BDD1C5E286C00E5C807 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		840B0BBA1C5A210000E5C807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		840B0BBF1C5A210000E5C807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../LaunchScreen.xib; sourceTree = "<group>"; };
+		E798C3C91D2D55C0004CD5C6 /* MyCustomViewIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomViewIn.xib; sourceTree = "<group>"; };
+		E798C3CD1D2D55CA004CD5C6 /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
+		E798C3CE1D2D55CA004CD5C6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E798C3D11D2D55D6004CD5C6 /* Blog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		E798C3D21D2D55D6004CD5C6 /* MyCustomViewIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomViewIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,44 +62,58 @@
 		840B0BB21C5A210000E5C807 /* test_CustomViewController */ = {
 			isa = PBXGroup;
 			children = (
-				840B0BC51C5A349900E5C807 /* Model */,
-				840B0BC61C5A34A200E5C807 /* View */,
-				840B0BC71C5A34A900E5C807 /* Controller */,
 				840B0BB31C5A210000E5C807 /* AppDelegate.swift */,
-				840B0BB71C5A210000E5C807 /* Main.storyboard */,
-				840B0BBA1C5A210000E5C807 /* Assets.xcassets */,
-				840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */,
-				840B0BBF1C5A210000E5C807 /* Info.plist */,
+				E798C3C61D2D5559004CD5C6 /* Model */,
+				E798C3C81D2D5559004CD5C6 /* View */,
+				E798C3C41D2D5559004CD5C6 /* Controller */,
+				E798C3C51D2D5559004CD5C6 /* Helpers */,
+				E798C3C71D2D5559004CD5C6 /* Source */,
 			);
 			path = test_CustomViewController;
 			sourceTree = "<group>";
 		};
-		840B0BC51C5A349900E5C807 /* Model */ = {
+		E798C3C41D2D5559004CD5C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				840B0BD61C5D0FDE00E5C807 /* TableViewObject.swift */,
-				840B0BDD1C5E286C00E5C807 /* Blog.swift */,
-				840B0BD31C5B9F1200E5C807 /* MyCustomViewIn.swift */,
+				E798C3CD1D2D55CA004CD5C6 /* TableViewManager.swift */,
+				E798C3CE1D2D55CA004CD5C6 /* ViewController.swift */,
 			);
-			name = Model;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		840B0BC61C5A34A200E5C807 /* View */ = {
+		E798C3C51D2D5559004CD5C6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				840B0BD11C5B9E7D00E5C807 /* MyCustomViewIn.xib */,
-				840B0BD81C5D100C00E5C807 /* TableViewView.swift */,
 			);
-			name = View;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		840B0BC71C5A34A900E5C807 /* Controller */ = {
+		E798C3C61D2D5559004CD5C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				840B0BB51C5A210000E5C807 /* ViewController.swift */,
-				840B0BDA1C5D12C800E5C807 /* TableViewManager.swift */,
+				E798C3D11D2D55D6004CD5C6 /* Blog.swift */,
+				E798C3D21D2D55D6004CD5C6 /* MyCustomViewIn.swift */,
 			);
-			name = Controller;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E798C3C71D2D5559004CD5C6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				840B0BBF1C5A210000E5C807 /* Info.plist */,
+				840B0BBA1C5A210000E5C807 /* Assets.xcassets */,
+				840B0BC81C5A3ACD00E5C807 /* LaunchScreen.xib */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E798C3C81D2D5559004CD5C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E798C3C91D2D55C0004CD5C6 /* MyCustomViewIn.xib */,
+				840B0BB71C5A210000E5C807 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +177,7 @@
 			files = (
 				840B0BC91C5A3ACD00E5C807 /* LaunchScreen.xib in Resources */,
 				840B0BBB1C5A210000E5C807 /* Assets.xcassets in Resources */,
-				840B0BD21C5B9E7D00E5C807 /* MyCustomViewIn.xib in Resources */,
+				E798C3CB1D2D55C0004CD5C6 /* MyCustomViewIn.xib in Resources */,
 				840B0BB91C5A210000E5C807 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,13 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840B0BDB1C5D12C800E5C807 /* TableViewManager.swift in Sources */,
-				840B0BDE1C5E286C00E5C807 /* Blog.swift in Sources */,
-				840B0BB61C5A210000E5C807 /* ViewController.swift in Sources */,
-				840B0BD91C5D100C00E5C807 /* TableViewView.swift in Sources */,
-				840B0BD71C5D0FDE00E5C807 /* TableViewObject.swift in Sources */,
+				E798C3CF1D2D55CA004CD5C6 /* TableViewManager.swift in Sources */,
+				E798C3D41D2D55D6004CD5C6 /* MyCustomViewIn.swift in Sources */,
+				E798C3D31D2D55D6004CD5C6 /* Blog.swift in Sources */,
+				E798C3D01D2D55CA004CD5C6 /* ViewController.swift in Sources */,
 				840B0BB41C5A210000E5C807 /* AppDelegate.swift in Sources */,
-				840B0BD41C5B9F1200E5C807 /* MyCustomViewIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +206,7 @@
 				840B0BB81C5A210000E5C807 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
