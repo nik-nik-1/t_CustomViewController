@@ -9,6 +9,8 @@
 import Foundation
 
 struct Blog {
+
   let category: String
   let name: String
+
 }

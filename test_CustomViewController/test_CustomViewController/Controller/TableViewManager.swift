@@ -9,28 +9,40 @@
 import UIKit
 
 class TableViewManager: NSObject {
-  
-  func getMassForTableView() -> [String] {
-    let swiftBlogs = ["Ray Wenderlich", "NSHipster", "iOS Developer Tips", "Jameson Quave", "Natasha The Robot", "Coding Explorer", "That Thing In Swift", "Andrew Bancroft", "iAchieved.it", "Airspeed Velocity"]
-    
-    return swiftBlogs
-  }
-  
-  func getStructForTableView() -> [Blog] {
-    
-    let swiftBlogs = [
-      Blog(category:"1", name:"Ray Wenderlich"),
-      Blog(category:"2", name:"NSHipster"),
-      Blog(category:"1", name:"iOS Developer Tips"),
-      Blog(category:"2", name:"Jameson Quave"),
-      Blog(category:"3", name:"Natasha The Robot"),
-      Blog(category:"1", name:"Coding Explorer"),
-      Blog(category:"3", name:"That Thing In Swift"),
-      Blog(category:"1", name:"Andrew Bancroft"),
-      Blog(category:"3", name:"iAchieved.it"),
-      Blog(category:"1", name:"Airspeed Velocity")]
-    
-    return swiftBlogs
-  }
-  
+
+	private let swiftBlogs = ["Ray Wenderlich",
+	                  "NSHipster",
+	                  "iOS Developer Tips",
+	                  "Jameson Quave",
+	                  "Natasha The Robot",
+	                  "Coding Explorer",
+	                  "That Thing In Swift",
+	                  "Andrew Bancroft",
+	                  "iAchieved.it",
+	                  "Airspeed Velocity"]
+
+	func getMassForTableView() -> [String] {
+
+		return swiftBlogs
+
+	}
+
+	func getStructForTableView() -> [Blog] {
+
+		let swiftBlogsStruct = [
+			Blog(category:"1", name: swiftBlogs[0]),
+			Blog(category:"2", name: swiftBlogs[1]),
+			Blog(category:"1", name: swiftBlogs[2]),
+			Blog(category:"2", name: swiftBlogs[3]),
+			Blog(category:"3", name: swiftBlogs[4]),
+			Blog(category:"1", name: swiftBlogs[5]),
+			Blog(category:"3", name: swiftBlogs[6]),
+			Blog(category:"1", name: swiftBlogs[7]),
+			Blog(category:"3", name: swiftBlogs[8]),
+			Blog(category:"1", name: swiftBlogs[9])
+		]
+
+		return swiftBlogsStruct
+	}
+
 }

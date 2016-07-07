@@ -106,8 +106,8 @@
                     <navigationItem key="navigationItem" id="hbm-EQ-nZg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="InputTextController" destination="cEh-oI-ZBU" id="mhB-SM-IZj"/>
-                        <outlet property="MyTableView" destination="1BM-2d-DWy" id="xI2-Y7-qqi"/>
+                        <outlet property="inputTextController" destination="cEh-oI-ZBU" id="PhM-jc-aae"/>
+                        <outlet property="myTableView" destination="1BM-2d-DWy" id="WD3-vi-llp"/>
                         <outlet property="searchDisplayController" destination="ZKs-gX-i2r" id="and-vE-OU3"/>
                     </connections>
                 </viewController>

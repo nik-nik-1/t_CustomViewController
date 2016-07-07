@@ -7,8 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCustomViewIn" customModule="test_CustomViewController" customModuleProvider="target">
             <connections>
-                <outlet property="SearchButton" destination="oxQ-pD-DYd" id="6rf-dg-cPs"/>
-                <outlet property="SearchTextInput" destination="WB7-5c-r1s" id="FpK-lL-BKf"/>
+                <outlet property="searchButton" destination="oxQ-pD-DYd" id="vzq-m2-a3K"/>
+                <outlet property="searchTextInput" destination="WB7-5c-r1s" id="URd-m1-8Yx"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
