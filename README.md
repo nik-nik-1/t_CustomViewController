@@ -5,7 +5,7 @@ What's interesting here?:
 1. MVC
 2. Custom view ("MyCustomViewIn.xib")
 2. Search in TableView from сustom view
-3. Tested using Swiftlint
+3. Has been tested using <a href="https://github.com/realm/SwiftLint">SwiftLint</a>
 
 <table border="0" width="100%" cellpadding="5" align="center" cellspacing = "2">
    <tr>
